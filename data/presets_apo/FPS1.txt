@@ -1,0 +1,18 @@
+# INZONE H6 Air 预设：FPS-1
+# 内部名 FPS1，均衡器区块 equalizer
+# 界面说明：设置为强调脚步声和枪声等音效的声音。
+# 粘进 Equalizer APO 的 config.txt，或放到它的 config/ 目录里
+# 建议 Preamp：-3.56 dB
+
+Preamp: -3.56 dB
+
+Filter 1: ON PK Fc 31.5 Hz Gain -6 dB Q 2.4
+Filter 2: ON PK Fc 63 Hz Gain -2 dB Q 1.56
+Filter 3: ON PK Fc 125 Hz Gain +2 dB Q 1.56
+Filter 4: ON PK Fc 250 Hz Gain +3 dB Q 1.8
+Filter 5: ON PK Fc 500 Hz Gain +2 dB Q 1.56
+Filter 6: ON PK Fc 1000 Hz Gain +0 dB Q 1
+Filter 7: ON PK Fc 2000 Hz Gain +2 dB Q 1.56
+Filter 8: ON PK Fc 4000 Hz Gain +3 dB Q 1.8
+Filter 9: ON PK Fc 8000 Hz Gain +1 dB Q 1.35
+Filter 10: ON PK Fc 16000 Hz Gain -2 dB Q 1.56

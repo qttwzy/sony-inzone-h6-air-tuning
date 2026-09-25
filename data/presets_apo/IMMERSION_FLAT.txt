@@ -1,0 +1,18 @@
+# INZONE H6 Air 预设：RPG/Adventure
+# 内部名 IMMERSION_FLAT，均衡器区块 mode_equalizer
+# 界面说明：设置为对游戏空间信息敏感的音效。
+# 粘进 Equalizer APO 的 config.txt，或放到它的 config/ 目录里
+# 建议 Preamp：-5.44 dB
+
+Preamp: -5.44 dB
+
+Filter 1: ON PK Fc 50 Hz Gain +6.5 dB Q 2.3
+Filter 2: ON PK Fc 84 Hz Gain -11 dB Q 1.5
+Filter 3: ON PK Fc 150 Hz Gain +5.3 dB Q 0.45
+Filter 4: ON PK Fc 800 Hz Gain -5.5 dB Q 2.5
+Filter 5: ON PK Fc 1000 Hz Gain +4.2 dB Q 0.9
+Filter 6: ON PK Fc 1650 Hz Gain -4.5 dB Q 2
+Filter 7: ON PK Fc 1800 Hz Gain +3 dB Q 1.8
+Filter 8: ON PK Fc 4100 Hz Gain -8 dB Q 4
+Filter 9: ON PK Fc 6500 Hz Gain +0 dB Q 1.5
+Filter 10: ON PK Fc 9500 Hz Gain -8 dB Q 3

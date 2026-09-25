@@ -1,0 +1,9 @@
+# INZONE H6 Air 预设：平直
+# 内部名 FLAT，均衡器区块 (未启用)
+# 界面说明：设置为标准声音。
+# 粘进 Equalizer APO 的 config.txt，或放到它的 config/ 目录里
+# 建议 Preamp：+0.00 dB
+
+Preamp: 0.0 dB
+
+# 该预设不启用均衡器（全平），上面这条只作占位。
