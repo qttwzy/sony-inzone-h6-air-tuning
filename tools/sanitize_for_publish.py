@@ -71,7 +71,10 @@ KNOWN_SAFE_GUIDS = {
 
 # 发布时要带上哪些文件（工具箱相对路径 → 发布目录相对路径）
 COPY_MAP: list[tuple[str, str]] = [
-    ("README.md", "README.md"),
+    # 本地 README.md 是完整技术报告，发布时降格为 REPORT.md；
+    # 仓库首页用 PUB_README.md（精简版 + 免责声明）。
+    ("PUB_README.md", "README.md"),
+    ("README.md", "REPORT.md"),
     ("replacement_matrix.md", "REPLACEABILITY.md"),
     ("tools/inzone_eq.py", "tools/inzone_eq.py"),
     ("tools/harvest_presets.py", "tools/harvest_presets.py"),
@@ -136,7 +139,9 @@ def main() -> int:
         total_fix += n
 
         if dst_rel.endswith(".md"):
-            clean = HEADER + clean
+            # 仓库首页 README 不加脱敏声明头（它是人工撰写的），其余 Markdown 加
+            if dst_rel != "README.md":
+                clean = HEADER + clean
             # 正文里的 out/... 在发布目录里统一叫 data/...
             clean = (clean.replace("out/harvested/", "data/")
                           .replace("out/presets_apo/", "data/presets_apo/")
